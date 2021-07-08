@@ -1,0 +1,16 @@
+###
+GET http://localhost:3000/api/users
+
+###
+POST http://localhost:3000/api/users/signIn
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGNiNDJiNmUyMWRjYjNlZDQzOTE4ZGIiLCJpYXQiOjE2MjM5MzM2MjJ9.0XkLa1ew4ffypfu-c-k2EqnEKLDrhHbmzb-RmF3L9FE
+
+{
+"email":"villegas@gmail.com",
+"password":"sdasdq123e4"
+}
+
+###
+POST http://localhost:3000/api/users/send-email
+ 

@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/api/employees
+
+###
+POST http://localhost:3000/api/employees
+content-type: application/json
+
+{
+    "name": "Joa" ,
+    "secondName": "Martinez",
+    "lastName": "Hernandez",
+    "office": "Jefe de Piso",
+    "email": "joaquindev@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/employees/60bf2b45b7ee9a44acc0ae71
+
+###
+DELETE http://localhost:3000/api/employees/60c32a35d2413c1590727f7d
+
+###
+PUT http://localhost:3000/api/employees/60bf2b45b7ee9a44acc0ae71
+content-type: application/json
+
+{
+    "office": "Mty"
+}

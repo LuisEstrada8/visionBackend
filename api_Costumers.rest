@@ -1,0 +1,35 @@
+###
+GET http://localhost:3000/api/costumers
+
+###
+POST http://localhost:3000/api/costumers
+content-type: application/json
+
+{
+"number": "6",
+"pacientName":"Santi",
+"pacientSecondName":"Urgado",
+"pacientLastName":"Perez",
+"docotAsign":"Carballo",
+"typeOperation":"Liposiccion",
+"typeOfDiet":"Liquida"
+}
+
+###
+GET http://localhost:3000/api/costumers/60bf6fd37b6fe83d341757fc
+###
+DELETE http://localhost:3000/api/costumers/60bf5d4e518669271c6a9e97
+
+###
+PUT http://localhost:3000/api/costumers/60bf5d4e518669271c6a9e97
+content-type: application/json
+
+{
+//"number": "4",
+//"pacientName":"Roque",
+//"pacientSecondName":"Fernandez",
+//"pacientLastName":"smith",
+//"docotAsign":"Phils",
+"typeOperation":"Liposuccion"
+//"typeOfDiet":"Liquida"
+}
